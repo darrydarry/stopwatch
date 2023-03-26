@@ -1,1 +1,27 @@
-@import "./normolize.css" 
+@import './normolize.css';
+
+.container {
+  margin: auto;
+  width: 100%;
+  background-color: #353638;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 768px;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 16px;
+  }
+}
